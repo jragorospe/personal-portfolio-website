@@ -1,0 +1,41 @@
+.nav-icon {
+    fill: #fff;
+    border: solid 5px transparent;
+    box-shadow: 0 0 0 1px transparent;
+    outline: none;
+    transition: 0.1s;
+}
+
+.nav-icon:hover {
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.custom-underline:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
+
+.shadow-gold {
+    box-shadow: 5px 5px 0 #c18e37;
+}
+
+.shadow-yellow {
+    box-shadow: 5px 5px 0 #d7df23;
+}
+
+.shadow-red {
+    box-shadow: 5px 5px 0 #dd1111;
+}
+
+.shadow-blue {
+    box-shadow: 5px 5px 0 #5388eb;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.bg-olive {
+    background-color: #aca794;
+}
