@@ -1,13 +1,13 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎮 About | Joseph Gorospe</title>
+    <title>🎮 Games | Joseph Gorospe</title>
     <link href="dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <script src="script/script.js"></script> 
 </head>
 <body class="bg-blackish text-white">
@@ -28,8 +28,8 @@
                         </svg>
                     </button>
                     <ul class="text-sm hidden md:flex flex-col p-4 md:p-0 mt-4 md:flex-row rtl:space-x-reverse md:mt-0 md:border-0">
-                        <li class=""><p class="text-draplin py-2 px-4 block whitespace-no-wrap">About</p></li>
-                        <li class=""><a class="text-white hover:text-draplin py-2 px-4 block whitespace-no-wrap" href="games.html">Games</a></li>
+                        <li class=""><a class="text-white hover:text-draplin py-2 px-4 block whitespace-no-wrap" href="about.html">About</a></li>
+                        <li class=""><p class="text-draplin py-2 px-4 block whitespace-no-wrap">Games</p></li>
                         <li class=""><a class="text-white hover:text-draplin py-2 px-4 block whitespace-no-wrap" href="/files/Joseph_Gorospe_Gameplay_Programmer_Resume.pdf" target="_blank">Resume</a></li>
                         <li class=""><a class="py-2 pl-4 pr-2 block whitespace-no-wrap" target="_blank" href="https://www.linkedin.com/in/joseph-gorospe/">
                             <svg role="img" class="cursor-pointer w-5 h-5 fill-current hover:text-draplin transition-all" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
@@ -42,8 +42,8 @@
                         </a></li>
                     </ul>
                     <ul id="dropdown-menu" class="w-36 absolute right-0 hidden paragraph pt-2">
-                        <li class=""><p class="bg-blue-900 py-2 px-4 block whitespace-no-wrap">About</p></li>
-                        <li class=""><a class="rounded-t bg-black hover:bg-blue-900 py-2 px-4 block whitespace-no-wrap" href="games.html">Games</a></li>
+                        <li class=""><a class="rounded-t bg-black hover:bg-blue-900 py-2 px-4 block whitespace-no-wrap" href="about.html">About</a></li>
+                        <li class=""><p class="bg-blue-900 py-2 px-4 block whitespace-no-wrap">Games</p></li>
                         <li class=""><a class="rounded-t bg-black hover:bg-blue-900 py-2 px-4 block whitespace-no-wrap" href="/files/Joseph_Gorospe_Gameplay_Programmer_Resume.pdf" target="_blank">Resume</a></li>
                         <li class="">
                             <div class="flex flex-row space-x-4 bg-black py-4 px-4 whitespace-no-wrap">
@@ -64,148 +64,186 @@
         </nav>
     </header>
 
-    <main class="max-w-3xl m-auto py-16 px-4">
-        <div class="gap-16 items-center py-6 mx-auto max-w-5xl md:grid md:grid-cols-5 md:py-12">
-            <div class="col-span-2 text-center">
-                <img class="mb-8 w-full rounded-full" src="/img/profile-square.jpeg" alt="profile-img">
-                <h2 class="text-2xl font-semibold text-white uppercase">Joseph Gorospe</h2>
-                <h3 class="mb-8 text-base font-mono text-gray-300">Gameplay Programmer</h3>
-            </div>
-            <div class="col-span-3">
+    <nav class="max-w-5xl my-4 mx-auto flex content-center justify-center items-center">
+        <div class="flex items-center space-x-6 uppercase">
+            <ul class="text-sm md:flex flex-col text-center p-4 md:p-0 mt-4 md:flex-row rtl:space-x-reverse md:mt-0 md:border-0">
+                <li class=""><span class="text-draplin py-2 px-4 block whitespace-no-wrap">Nightingale</span></li>
+                <li class=""><a class="text-white hover:text-draplin py-2 px-4 block whitespace-no-wrap" href="#thrive">Thrive: Heavy Lies the Crown</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="w-full m-auto">
+        <div class="pb-8">
+            <a href="https://www.youtube.com/watch?v=1dcRqDhVVV8" class="relative flex items-center justify-center h-2/3 overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-50" target="_blank">
+                <video src=
+        "/files/Nightingale _ Release Data Trailer _ gamescom 2023.mp4"
+                    autoplay="{true}" loop muted
+                    class="absolute z-0
+                    min-h-full min-w-full max-w-none brightness-50">
+                </video>
+                <img class="absolute z-10 flex top-10 items-center justify-center h-20 md:h-24" src="img/inflexion-games-logo.png"></img>
+                <div class="absolute z-10 flex flex-col bottom-10 items-center justify-center h-30 md:h-36 text-white font-extrabold uppercase m-2 text-center">
+                    <p class="text-xl md:text-3xl">Gameplay Programmer</p>
+                    <div class="m-0.5"></div>
+                    <p class="text-2xl md:text-4xl">Nightingale</p>
+                    <div class="m-3"></div>
+                    <p class="text-xl md:text-3xl">2022-2024</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gap-16 px-6 mx-auto max-w-5xl pt-8 md:pt-16 xl:px-0">
+            <div>
+                <h2 class="text-xl font-semibold text-white uppercase">Gameplay Programmer</h2>
+                <h3 class="mb-4 text-base font-mono text-gray-300">AI | Encounters</h3>
                 <p class="paragraph">
-                    Hello! My name is Joseph and I've been programming games professionally for over three years. 
-                    Video games are an incredible medium with interesting problems to solve for a curious developer like myself. 
-                    I'm constantly learning and I'm dedicated to utilizing my skills to continue to create memorable gaming experiences.   
+                    I partnered with a Senior Programmer on the encounter system where we took ownership from designers and fully refactored the entire system. With <em>Nightingale</em> being a live service game 
+                    we also consulted our designers to identify and alleviate as many inefficiencies as possible in the data authoring process and level markup to ensure a sustainable content pipeline with quick turnover. 
                     <br><br>
-                    I've had the privilege of working excellent games with amazing people including 
-                    <a href="https://thrivehltc.com/" class="text-draplin font-semibold" target="_blank">Thrive: Heavy Lies the Crown</a> 
-                    and <a href="https://playnightingale.com/" class="text-draplin font-semibold" target="_blank">Nightingale</a>.
+                    I then had the opportunity to move to the AI team with the primary goal of bridging the gap between encounter and AI systems. By obtaining a 
+                    greater understanding of our AI systems, we were able to decouple the encounter system from AI systems, define a solid bridge, and make much needed improvements to both systems.
                     <br><br>
-                    When I'm not developing games I'm either climbing, swing dancing, playing volleyball, or out in the mountains. 
-                    My wife and I also run a charity supper club called <a href="https://sunago.gives/" class="text-draplin font-semibold" target="_blank">Sunago</a> 
-                    and it has been incredibly rewarding to grow our skills and deepen our relationships with our communities.
+                    I also had the opportunity to mentor interns and junior programmers, and represent Inflexion Games at various outreach events supporting
+                    Alberta's growing media industry.
                     <br><br>
-                    <span class="italic">I'm currently looking for opportunities so if you are looking for a self-driven, highly collaborative, servant leader, let's get in touch!</span>
+                    It was a privilege to work with an undeniably talented team at Inflexion Games and ship my first game. This was my 
+                    first real foray into the game industry and I'm incredibly grateful to have been given the opportunity to work with this team on <em>Nightingale</em>. 
+                    I was given the environment to make mistakes, pursue my interests, and take ownership of my systems. 
                 </p>
             </div>
         </div>
 
-        <div class="text-center text-xl md:text-2xl font-semibold text-white py-6 uppercase">Values</div>
-        <div class="gap-2 items-center pb-6 mx-auto max-w-5xl md:grid md:grid-cols-2 md:pb-12 text-center">
-            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
-                        <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z"/>
-                        <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"/>
-                        <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z"/>
-                        <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z" fill="currentColor"/>
-                    </svg>
-                    <p class="my-4 text-gray-300 text-lg font-bold">Humility</p>
-                    <p class="text-gray-500 my-4 text-sm">
-                        Growth can only happen when we embrace our failures, ask for help, and 
-                        pursue learning with an open mind. As leaders, this also means that we must 
-                        facilitate an environment where people can come to us without fear and fail safely.
-                    </p>
+        <section class="flex items-center px-6 mx-auto text-center md:max-w-4xl">
+            <div class="slider mx-2">
+                <div id="slide-1" class="paragraph pt-32">
+                    <svg class="h-12 mx-auto mb-3 text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    I worked with Joseph for more than two years at Inflexion Games. 
+                    When Joseph started, I was assigned to work with him as his mentor in order to show him the ropes and to get him started at the studio. 
+                    Within a few months Joseph had taken on increasing responsibility, had made valuable contributions to the game, and had begun to assert 
+                    himself positively by actively participating in design discussions as well as making excellent suggestions for how we could improve our systems. 
+                    As time went on, Joseph only increased his capabilities in programming, design, and communication. Joseph is also friendly and easy to work with, 
+                    and I have no doubt that he would be able to fit in well with any team. In short, Joseph is an excellent programmer and communicator, and tops 
+                    things off by being an all-around good guy to work with. I would recommend him for just about any programming role.
+                    <figcaption class="flex items-center justify-center mt-6">
+                        <div class="flex items-center">
+                            <a href="https://www.linkedin.com/in/jason-knipe-a83b9a1/" target="_blank" class="font-medium text-sm md:text-base text-white mx-auto"><img class="inline size-8 mr-2 rounded-full" src="/img/Jason-profile.jpg" alt="jason-profile-img">Jason Knipe<span class="text-gray-700 mx-2">|</span><span class="text-xs md:text-sm font-medium text-gray-300">Senior Gameplay Programmer</span></a>
+                        </div>
+                    </figcaption>
+                </div>
+                <div id="slide-2" class="paragraph pt-32">
+                    <svg class="h-12 mx-auto mb-3 text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    I managed Joseph on the AI team for several months during his time at Inflexion Games. 
+                    He was always willing to learn new and better ways to solve technical problems, and, of his own volition, he would use those learnings to improve already existing systems. 
+                    Additionally, he was always jumping in to help support less technical team members with their problems. 
+                    Any team seeking a self-driven, highly collaborative member would benefit from having Joseph.
+                    <figcaption class="flex items-center justify-center mt-6">
+                        <div class="flex items-center">
+                            <a href="https://www.linkedin.com/in/arta-seify/" target="_blank" class="font-medium text-sm md:text-base text-white mx-auto"><img class="inline size-8 mr-2 rounded-full" src="/img/Arta-profile.jpg" alt="arta-profile-img">Arta Seify<span class="text-gray-700 mx-2">|</span><span class="text-xs md:text-sm font-medium text-gray-300">Lead Gameplay Programmer</span></a>
+                        </div>
+                    </figcaption>
+                </div>
+                <div id="slide-3" class="paragraph pt-32">
+                    <svg class="h-12 mx-auto mb-3 text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    Joseph made our lives as gameplay and level designers significantly easier through improved automation and the development of tailored tools that streamlined our workflows and eliminated sources of error. 
+                    His proactive approach and deep understanding of our processes allowed us to focus more on creativity and polish, saving time and improving outcomes. 
+                    Joseph’s responsiveness and collaborative spirit ensured that every concern or request was met with practical, effective solutions, often exceeding expectations. 
+                    Whether debugging issues, integrating features, or enhancing systems, his work was consistently impactful, reliable, and delivered with a genuine commitment to supporting the team.
+                    <figcaption class="flex items-center justify-center mt-6">
+                        <div class="flex items-center">
+                            <a href="https://www.linkedin.com/in/phillipdaigle/" target="_blank" class="font-medium text-sm md:text-base text-white mx-auto"><img class="inline size-8 mr-2 rounded-full" src="/img/Phil-profile.jpg" alt="phil-profile-img">Phillip Daigle<span class="text-gray-700 mx-2">|</span><span class="text-xs md:text-sm font-medium text-gray-300">Lead Encounter Designer</span></a>
+                        </div>
+                    </figcaption>
+                </div>
+                <div id="slide-4" class="paragraph pt-32">
+                    <svg class="h-12 mx-auto mb-3 text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    I was lucky enough to hire and subsequently manage Joseph during his time at Inflexion.
+                    Joseph is one of the best up-and-coming developers I have had the pleasure of working with. His professional strengths are his diligence, passion, and high self-standards. 
+                    This, coupled with his wonderful and warm personality, makes him an excellent team member and even better co-developer to partner with.
+                    Joseph would be an asset on any team, particularly those making use of Unreal Engine or C++ for game development. 
+                    Joseph has worked in a number of sub-disciplines in gameplay development in Unreal, such as AI and the Gameplay Ability System Plugin. 
+                    He has also worked excellently in cross departmental partnerships using his strong communication skills.
+                    I anticipate Joseph becoming an even more exceptional programmer and game developer over time, and would be a great addition to any programming team.
+                    <figcaption class="flex items-center justify-center mt-6">
+                        <div class="flex items-center">
+                            <a href="https://www.linkedin.com/in/sarahmainwaring/" target="_blank" class="font-medium text-sm md:text-base text-white mx-auto"><img class="inline size-8 mr-2 rounded-full" src="/img/Sarah-profile.jpg" alt="sarah-profile-img">Sarah Mainwaring<span class="text-gray-700 mx-2">|</span><span class="text-xs md:text-sm font-medium text-gray-300">Gameplay Programming Area Lead</span></a>
+                        </div>
+                    </figcaption>
                 </div>
             </div>
-
-            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
-                    <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z" fill="currentColor"/>
-                    <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"/>
-                    <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z"/>
-                    <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z"/>
-                </svg>
-                <div>
-                    <p class="my-4 text-gray-300 text-lg font-bold">Ambition</p>
-                    <p class="text-gray-500 my-4 text-sm">
-                        We must seek challenges and opportunities to reach new heights and expand our capabilities. 
-                        We must also understand that this can only be acheived by building a strong foundation of skills 
-                        and trust and valuing slow and steady growth.
-                    </p>
-                </div>
-            </div>
-
-            <div class="bg-black rounded-lg p-6 my-4 height:22rem col-span-2 md:w-1/2 md:-my-4 md:mx-auto">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
-                    <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z" fill="currentColor"/>
-                    <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z" fill="currentColor"/>
-                    <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z" fill="currentColor"/>
-                    <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z" fill="currentColor"/>
-                </svg>
-                <div>
-                    <p class="my-4 text-gray-300 text-lg font-bold">Service</p>
-                    <p class="text-gray-500 my-4 text-sm">
-                        The key to success comes from understanding how to best provide value to others and wanting it for them, whether it's
-                        players, co-workers, or anyone in between. By prioritizing this we strengthen our communities, build trust and gratitude, 
-                        and ultimately, share in success. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
-                    <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z"/>
-                    <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"  fill="currentColor"/>
-                    <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z"/>
-                    <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z"/>
-                </svg>
-                <div>
-                    <p class="my-4 text-gray-300 text-lg font-bold">Camaraderie</p>
-                    <p class="text-gray-500 my-4 text-sm">
-                        A strong team can acheive anything which is why we must prioritize building relationships, 
-                        investing in each other's success, and embracing and overcoming challenges together. We must 
-                        approach each other with a heart of service and humility to build teams with a foundation of trust and support.
-                    </p>
-                </div>
-            </div>
-
-            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
-                        <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z"/>
-                        <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"/>
-                        <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z" fill="currentColor"/>
-                        <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z"/>
-                    </svg>
-                    <p class="my-4 text-gray-300 text-lg font-bold">Diligence</p>
-                    <p class="text-gray-500 my-4 text-sm">
-                        We must take responsibility of our work if we want to create meaningful gaming experiences. Excellence can only 
-                        be acheived when we give our best work. We must do our due diligence to maintain healthy collaboration, processes, 
-                        and codebases recognizing that the highest cost to our teams is disfunction and debt.
-                    </p>
-                </div>
-            </div>
+        </section>
+        <div class="pb-6 slider-nav flex items-center justify-center">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <!-- <a href="#slide-5"></a> -->
         </div>
+    </main>
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4 md:-mt-4">
-            <a class="cursor-pointer p-4 border border-gray-800 hover:border-draplin hover:bg-black rounded-md flex flex-grow items-center justify-center font-semibold text-draplin text-sm transition-all space-x-2" href="/files/Joseph_Gorospe_Gameplay_Programmer_Resume.pdf" target="_blank">
-                <svg viewBox="0 0 24 24" fill="transparent" aria-hidden="true" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 12V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V12" stroke="currentColor" stroke-linejoin="round"/>
-                    <path d="M12 3L12 15M12 15L16 11M12 15L8 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <p>Grab my resume</p>
-            </a>
-            <a class="cursor-pointer p-4 border border-gray-800 hover:border-draplin hover:bg-black rounded-md flex flex-grow items-center justify-center font-semibold text-draplin text-sm transition-all space-x-2" href="mailto:jragorospe@gmail.com" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-4">
-                    <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"></path>
-                </svg>
-                <p>Send an email</p>
-            </a>
-            <a class="cursor-pointer p-4 border border-gray-800 hover:border-draplin hover:bg-black rounded-md flex flex-grow items-center justify-center font-semibold text-draplin text-sm transition-all space-x-2" href="https://linkedin.com/in/joseph-gorospe" target="_blank">
-                <svg role="img" class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                <p>Send a DM</p>
+    <main class="w-full m-auto pt-8" id="thrive">
+        <div class="pb-8">
+            <a href="https://www.youtube.com/watch?v=K54N59aZZjU" class="relative flex items-center justify-center h-2/3 overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-50" target="_blank">
+                <video src=
+        "/files/Thrive - Early Access Trailer.mp4"
+                    autoplay="{true}" loop muted
+                    class="absolute z-0
+                    min-h-full min-w-full max-w-none brightness-50">
+                </video>
+                <img class="absolute z-10 flex top-10 items-center justify-center h-auto" src="img/zugalu-logo-full.png"></img>
+                <div class="absolute z-10 flex flex-col bottom-10 items-center justify-center h-30 md:h-36 text-white font-extrabold uppercase m-2 text-center">
+                    <p class="text-xl md:text-3xl">Game Developer</p>
+                    <div class="m-0.5"></div>
+                    <p class="text-2xl md:text-4xl">Thrive: Heavy Lies the Crown</p>
+                    <div class="m-3"></div>
+                    <p class="text-xl md:text-3xl">2021-2022</p>
+                </div>
             </a>
         </div>
 
-        <div class="grid grid-cols-1 place-items-center sm:grid-cols-4 gap-4 mt-16">
-            <img class="px-16 my-4 md:p-4" src="/img/inflexion-games-logo.png" alt="inflexion-logo">
-            <img class="px-16 my-4 md:p-4" src="/img/nightingale-logo.png" alt="nightingale-logo">
-            <img class="px-16 my-4 md:p-4" src="/img/zugalu-logo-full.png" alt="zugalu-logo">
-            <img class="px-16 my-4 md:p-4" src="/img/thrive-logo.png" alt="thrive-logo">
+        <div class="gap-16 items-center px-6 mx-auto max-w-5xl py-8 md:py-16 xl:px-0">
+            <div>
+                <h2 class="text-xl font-semibold text-white uppercase">Game Developer / Web Developer</h2>
+                <h3 class="mb-4 text-base font-mono text-gray-300">Core</h3>
+                <p class="paragraph">
+                    I had the opportunity to work in one of Calgary's few game studios on an ambitious multiplayer city builder RTS. I shared my time 
+                    between web development and game development, obtaining a solid seven months of experience in Unity. Zugalu had just restarted development 
+                    on <em>Thrive: Heavy Lies the Crown</em> so I had the opportunity to develop core systems for the game from the ground up.
+                    <br><br>
+                    I also worked on various web development contracts including the website redesign of <a href="https://nscad.ca/" class="text-draplin" target="_blank">NSCAD</a> where I
+                    led the development of the project and worked directly with our clients.
+                    <br><br>
+                    I'm incredibly grateful to Zugalu for giving me the opportunity to start my game development career and represent Calgary's growth in 
+                    the games industry. Their ambition and tenacity gives me confidence that they will continue to foster new talent, grow as a team, and find success.
+                </p>
+            </div>
         </div>
+
+        <section class="flex items-center px-6 py-16 mx-auto text-center md:max-w-4xl">
+            <div class="slider mx-2">
+                <div id="slide-1" class="paragraph">
+                    <svg class="h-12 mx-auto mb-3 text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    Joseph is the kind of person who approaches every challenge with determination, creativity, and humility. 
+                    Whether it’s tackling a tough coding problem or collaborating with a team, his drive and positive attitude set him apart. I have no doubt that his future contributions will leave a lasting impact on the gaming industry.
+                    I wholeheartedly recommend Joseph for any role he pursues. Any team would be lucky to have someone of his caliber onboard!
+                    <figcaption class="flex items-center justify-center mt-6">
+                        <div class="flex items-center">
+                            <a href="https://www.linkedin.com/in/hedgehodge/" target="_blank" class="font-medium text-sm md:text-base text-white mx-auto"><img class="inline size-8 mr-2 rounded-full" src="/img/Steve-profile.jpg" alt="steve-profile-img">Steven Hodges<span class="text-gray-700 mx-2">|</span><span class="text-xs md:text-sm font-medium text-gray-300">Community Manager</span></a>
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="flex justify-center bg-blackish border-solid border-t border-black border-opacity-50 px-5 py-4 opacity-90 z-20">

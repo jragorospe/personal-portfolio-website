@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 About | Joseph Gorospe</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <script src="script/script.js"></script> 
+</head>
+<body class="bg-blackish text-white">
+    <header class="bg-blackish sticky top-0 border-solid border-b border-black border-opacity-50 px-5 py-4 opacity-90 z-20">
+        <nav class="max-w-5xl m-auto flex justify-between items-center">
+            <div>
+                <button class="circle-button" type="button">
+                    <a href="index.html"><p class="font-bold text-center text-code text-draplin hover:text-white transition-all">JG</p></a>
+                </button>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div class="dropdown inline-block relative">
+                    <button id="dropdown-button" onclick="revealMenu()" class="circle-button md:hidden" type="button">
+                        <svg viewBox="0 0 100 70" fill="currentColor" class="h-4 w-4 text-gray-300">
+                            <rect width="100" height="10"></rect>
+                            <rect y="30" width="100" height="10"></rect>
+                            <rect y="60" width="100" height="10"></rect>
+                        </svg>
+                    </button>
+                    <ul class="text-sm hidden md:flex flex-col p-4 md:p-0 mt-4 md:flex-row rtl:space-x-reverse md:mt-0 md:border-0">
+                        <li class=""><p class="text-draplin py-2 px-4 block whitespace-no-wrap">About</p></li>
+                        <li class=""><a class="text-white hover:text-draplin py-2 px-4 block whitespace-no-wrap" href="index.html">Games</a></li>
+                        <li class=""><a class="text-white hover:text-draplin py-2 px-4 block whitespace-no-wrap" href="/files/Joseph_Gorospe_Gameplay_Programmer_Resume.pdf" target="_blank">Resume</a></li>
+                        <li class=""><a class="py-2 pl-4 pr-2 block whitespace-no-wrap" target="_blank" href="https://www.linkedin.com/in/joseph-gorospe/">
+                            <svg role="img" class="cursor-pointer w-5 h-5 fill-current hover:text-draplin transition-all" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                        </a></li>
+                        <li class=""><a class="py-2 px-2 block whitespace-no-wrap" target="_blank" href="https://github.com/jragorospe">
+                            <svg role="img" class="cursor-pointer w-5 h-5 fill-current hover:text-draplin transition-all" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                        </a></li>
+                        <li class=""><a class="py-2 px-2 block whitespace-no-wrap" target="_blank" href="mailto:jragorospe@gmail.com">
+                            <svg role="img" class="cursor-pointer w-5 h-5 fill-current hover:text-draplin transition-all" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"></path></svg>
+                        </a></li>
+                    </ul>
+                    <ul id="dropdown-menu" class="w-36 absolute right-0 hidden paragraph pt-2">
+                        <li class=""><p class="bg-blue-900 py-2 px-4 block whitespace-no-wrap">About</p></li>
+                        <li class=""><a class="rounded-t bg-black hover:bg-blue-900 py-2 px-4 block whitespace-no-wrap" href="index.html">Games</a></li>
+                        <li class=""><a class="rounded-t bg-black hover:bg-blue-900 py-2 px-4 block whitespace-no-wrap" href="/files/Joseph_Gorospe_Gameplay_Programmer_Resume.pdf" target="_blank">Resume</a></li>
+                        <li class="">
+                            <div class="flex flex-row space-x-4 bg-black py-4 px-4 whitespace-no-wrap">
+                                <a class="" target="_blank" href="https://www.linkedin.com/in/joseph-gorospe/">
+                                    <svg role="img" class="cursor-pointer w-5 h-5 fill-current text-blackish hover:text-draplin transition-all" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                                </a>
+                                <a class="" target="_blank" href="https://github.com/jragorospe">
+                                    <svg role="img" class="cursor-pointer w-5 h-5 fill-current text-blackish hover:text-draplin transition-all" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                                </a>
+                                <a class="" target="_blank" href="mailto:jragorospe@gmail.com">
+                                    <svg role="img" class="cursor-pointer w-5 h-5 fill-current text-blackish hover:text-draplin transition-all" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"></path></svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-3xl m-auto py-16 px-4">
+        <div class="gap-16 items-center py-6 mx-auto max-w-5xl md:grid md:grid-cols-5 md:py-12">
+            <div class="col-span-2 text-center">
+                <img class="mb-8 w-full rounded-full" src="/img/profile-square.jpeg" alt="profile-img">
+                <h2 class="text-2xl font-semibold text-white uppercase">Joseph Gorospe</h2>
+                <h3 class="mb-8 text-base font-mono text-gray-300">Gameplay Programmer</h3>
+            </div>
+            <div class="col-span-3">
+                <p class="paragraph">
+                    Hello! My name is Joseph and I've been programming games professionally for over three years. 
+                    Video games are an incredible medium with interesting problems to solve for a curious developer like myself. 
+                    I'm constantly learning and I'm dedicated to utilizing my skills to continue to create memorable gaming experiences.   
+                    <br><br>
+                    I've had the privilege of working excellent games with amazing people including 
+                    <a href="https://thrivehltc.com/" class="text-draplin font-semibold" target="_blank">Thrive: Heavy Lies the Crown</a> 
+                    and <a href="https://playnightingale.com/" class="text-draplin font-semibold" target="_blank">Nightingale</a>.
+                    <br><br>
+                    When I'm not developing games I'm either climbing, swing dancing, playing volleyball, or out in the mountains. 
+                    My wife and I also run a charity supper club called <a href="https://sunago.gives/" class="text-draplin font-semibold" target="_blank">Sunago</a> 
+                    and it has been incredibly rewarding to grow our skills and deepen our relationships with our communities.
+                    <br><br>
+                    <span class="italic">I'm currently looking for opportunities so if you are looking for a self-driven, highly collaborative, servant leader, let's get in touch!</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center text-xl md:text-2xl font-semibold text-white py-6 uppercase">Values</div>
+        <div class="gap-2 items-center pb-6 mx-auto max-w-5xl md:grid md:grid-cols-2 md:pb-12 text-center">
+            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
+                        <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z"/>
+                        <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"/>
+                        <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z"/>
+                        <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z" fill="currentColor"/>
+                    </svg>
+                    <p class="my-4 text-gray-300 text-lg font-bold">Humility</p>
+                    <p class="text-gray-500 my-4 text-sm">
+                        Growth can only happen when we embrace our failures, ask for help, and 
+                        pursue learning with an open mind. As leaders, this also means that we must 
+                        facilitate an environment where people can come to us without fear and fail safely.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
+                    <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z" fill="currentColor"/>
+                    <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"/>
+                    <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z"/>
+                    <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z"/>
+                </svg>
+                <div>
+                    <p class="my-4 text-gray-300 text-lg font-bold">Ambition</p>
+                    <p class="text-gray-500 my-4 text-sm">
+                        We must seek challenges and opportunities to reach new heights and expand our capabilities. 
+                        We must also understand that this can only be acheived by building a strong foundation of skills 
+                        and trust and valuing slow and steady growth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-black rounded-lg p-6 my-4 height:22rem col-span-2 md:w-1/2 md:-my-4 md:mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
+                    <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z" fill="currentColor"/>
+                    <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z" fill="currentColor"/>
+                    <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z" fill="currentColor"/>
+                    <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z" fill="currentColor"/>
+                </svg>
+                <div>
+                    <p class="my-4 text-gray-300 text-lg font-bold">Service</p>
+                    <p class="text-gray-500 my-4 text-sm">
+                        The key to success comes from understanding how to best provide value to others and wanting it for them, whether it's
+                        players, co-workers, or anyone in between. By prioritizing this we strengthen our communities, build trust and gratitude, 
+                        and ultimately, share in success. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
+                    <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z"/>
+                    <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"  fill="currentColor"/>
+                    <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z"/>
+                    <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z"/>
+                </svg>
+                <div>
+                    <p class="my-4 text-gray-300 text-lg font-bold">Camaraderie</p>
+                    <p class="text-gray-500 my-4 text-sm">
+                        A strong team can acheive anything which is why we must prioritize building relationships, 
+                        investing in each other's success, and embracing and overcoming challenges together. We must 
+                        approach each other with a heart of service and humility to build teams with a foundation of trust and support.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-black rounded-lg p-6 my-4 height:22rem">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="h-16 w-16 text-draplin mx-auto" viewBox="0 0 32 32" xml:space="preserve">
+                        <path d="M17.2421875,16l5.375,5.0341797H30V10.9658203h-7.3828125L17.2421875,16z M28,12.9658203v6.0683594h-4.5927734  L20.1679688,16l3.2392578-3.0341797H28z"/>
+                        <path d="M14.7578125,16l-5.375-5.0341797H2v10.0683594h7.3828125L14.7578125,16z M4,19.0341797v-6.0683594h4.5927734L11.8320312,16  l-3.2392578,3.0341797H4z"/>
+                        <path d="M10.965332,21.4472656V30H21.034668v-8.5527344L16,17.4248047L10.965332,21.4472656z M19.034668,28H12.965332v-5.5898438  L16,19.9853516l3.034668,2.4248047V28z" fill="currentColor"/>
+                        <path d="M21.034668,2H10.965332v8.5527344L16,14.5751953l5.034668-4.0224609V2z M19.034668,9.5898438L16,12.0146484  l-3.034668-2.4248047V4h6.0693359V9.5898438z"/>
+                    </svg>
+                    <p class="my-4 text-gray-300 text-lg font-bold">Diligence</p>
+                    <p class="text-gray-500 my-4 text-sm">
+                        We must take responsibility of our work if we want to create meaningful gaming experiences. Excellence can only 
+                        be acheived when we give our best work. We must do our due diligence to maintain healthy collaboration, processes, 
+                        and codebases recognizing that the highest cost to our teams is disfunction and debt.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4 md:-mt-4">
+            <a class="cursor-pointer p-4 border border-gray-800 hover:border-draplin hover:bg-black rounded-md flex flex-grow items-center justify-center font-semibold text-draplin text-sm transition-all space-x-2" href="/files/Joseph_Gorospe_Gameplay_Programmer_Resume.pdf" target="_blank">
+                <svg viewBox="0 0 24 24" fill="transparent" aria-hidden="true" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V12" stroke="currentColor" stroke-linejoin="round"/>
+                    <path d="M12 3L12 15M12 15L16 11M12 15L8 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>Grab my resume</p>
+            </a>
+            <a class="cursor-pointer p-4 border border-gray-800 hover:border-draplin hover:bg-black rounded-md flex flex-grow items-center justify-center font-semibold text-draplin text-sm transition-all space-x-2" href="mailto:jragorospe@gmail.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-4">
+                    <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"></path>
+                </svg>
+                <p>Send an email</p>
+            </a>
+            <a class="cursor-pointer p-4 border border-gray-800 hover:border-draplin hover:bg-black rounded-md flex flex-grow items-center justify-center font-semibold text-draplin text-sm transition-all space-x-2" href="https://linkedin.com/in/joseph-gorospe" target="_blank">
+                <svg role="img" class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                </svg>
+                <p>Send a DM</p>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 place-items-center sm:grid-cols-4 gap-4 mt-16">
+            <img class="px-16 my-4 md:p-4" src="/img/inflexion-games-logo.png" alt="inflexion-logo">
+            <img class="px-16 my-4 md:p-4" src="/img/nightingale-logo.png" alt="nightingale-logo">
+            <img class="px-16 my-4 md:p-4" src="/img/zugalu-logo-full.png" alt="zugalu-logo">
+            <img class="px-16 my-4 md:p-4" src="/img/thrive-logo.png" alt="thrive-logo">
+        </div>
+    </main>
+
+    <footer class="flex justify-center bg-blackish border-solid border-t border-black border-opacity-50 px-5 py-4 opacity-90 z-20">
+        <div class="max-w-5xl m-auto text-xs font-thin italic font-mono text-center">
+            This website was designed and developed by me using Tailwind CSS and Github Pages.
+        </div>
+    </footer>
+</body>
+</html>
